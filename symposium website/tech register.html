@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tech.css">
+    <title>Registration for Technical Events</title>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="title-container">
+        <h1 class="glow">TECHNICAL EVENTS</h1>
+        <p>Exclusively for COMPUTER SCIENCE AND ENGINEERING DEPARTMENT</p>
+    </div>
+    <div class="form-container">
+        <form class="register-form">
+            <h1>Register</h1>
+            <input type="text" placeholder="Full Name" required>
+            <select required>
+                <option value="" disabled selected>Department</option>
+                <option value="CSE">Computer Science and Engineering</option>
+            </select>
+            <select required>
+                <option value="" disabled selected>Year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+            <input type="text" placeholder="College Name" required>
+            <select id="event-select" required>
+                <option value="" disabled selected>Participating Event</option>
+                <option value="workshop">Workshop</option>
+                <option value="paper-presentation">Paper Presentation</option>
+                <option value="project-presentation">Project Presentation</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="event-details">
+            <input type="radio" name="event" id="workshop" class="event-radio" />
+            <label for="workshop">Workshop</label>
+            <div class="event-content">
+                <h2>Workshop Topics:</h2>
+                <p>1. AI and Machine Learning</p>
+                <p>2. Web Development</p>
+                <p>3. Cybersecurity Fundamentals</p>
+            </div>
+
+            <input type="radio" name="event" id="paper-presentation" class="event-radio" />
+            <label for="paper-presentation">Paper Presentation</label>
+            <div class="event-content">
+                <h2>Paper Presentation Topics:</h2>
+                <p>1. Next-Gen Computing</p>
+                <p>2. Data Science & Big Data</p>
+                <p>3. Emerging Trends in Technology</p>
+            </div>
+
+            <input type="radio" name="event" id="project-presentation" class="event-radio" />
+            <label for="project-presentation">Project Presentation</label>
+            <div class="event-content">
+                <h2>Project Presentation Topics:</h2>
+                <p>1. Intelligent Systems</p>
+                <p>2. IoT-based Projects</p>
+                <p>3. Innovative Solutions for Real Problems</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

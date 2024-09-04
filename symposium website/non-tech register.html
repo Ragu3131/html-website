@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="non-tech register.css">
+    <title>Registration for Non-Technical Events</title>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="title-container">
+        <h1 class="glow">NON-TECHNICAL EVENTS</h1>
+        <p>Exclusively for COMPUTER SCIENCE AND ENGINEERING DEPARTMENT</p>
+    </div>
+    <div class="form-container">
+        <form class="register-form">
+            <h1>Register</h1>
+            <input type="text" placeholder="Full Name" required>
+            <select required>
+                <option value="" disabled selected>Department</option>
+                <option value="CSE">Computer Science and Engineering</option>
+            </select>
+            <select required>
+                <option value="" disabled selected>Year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+            <input type="text" placeholder="College Name" required>
+            <select id="event-select" required>
+                <option value="" disabled selected>Participating Event</option>
+                <option value="selfie-pic">Selfie Pic</option>
+                <option value="pitch-your-ai">Pitch Your AI</option>
+                <option value="puzzle-solve">Puzzle Solve</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="event-details">
+            <input type="radio" name="event" id="selfie-pic" class="event-radio" />
+            <label for="selfie-pic">Selfie Pic</label>
+            <div class="event-content">
+                <h2>Selfie Pic Event:</h2>
+                <p>Capture your best moments with creativity and fun!</p>
+                <p>Topics: Best Backgrounds, Poses, and Filters.</p>
+            </div>
+
+            <input type="radio" name="event" id="pitch-your-ai" class="event-radio" />
+            <label for="pitch-your-ai">Pitch Your AI</label>
+            <div class="event-content">
+                <h2>Pitch Your AI Event:</h2>
+                <p>Showcase your creative ideas where AI meets reality!</p>
+                <p>Topics: Innovative AI Ideas, Business Proposals, and More.</p>
+            </div>
+
+            <input type="radio" name="event" id="puzzle-solve" class="event-radio" />
+            <label for="puzzle-solve">Puzzle Solve</label>
+            <div class="event-content">
+                <h2>Puzzle Solve Event:</h2>
+                <p>Challenge your mind with exciting puzzles!</p>
+                <p>Topics: Logical Reasoning, Brain Teasers, and Mind Games.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
